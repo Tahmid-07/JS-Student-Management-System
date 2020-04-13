@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>JS Student Management System</title>
+	 <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body onload="fetchDetails()">
+	 <div class="container">
+	 	<h2 style="margin-bottom: 5%;margin-top: 3%;text-align: center;">JS Student Management System</h2>
+	 	<div class="jumbotron">
+	 		<h3 style="margin-bottom: 3%">Add Student Details</h3>
+	 		<form id="inputForm">
+	 			<div class="form-group">
+	 				<label for="nameInput">Student Name</label>
+	 				<input type="text" class="form-control" id="nameInput"  name="name" placeholder="Student name">
+	 			</div>
+	 			<div class="form-group">
+	 				<label for="classInput">Class</label>
+	 				<input type="number" class="form-control" id="classInput"  name="class" placeholder="Class">
+	 			</div>
+	 			<div class="form-group">
+	 				<label for="sectionInput">Section</label>
+	 				<input type="text" class="form-control" id="sectionInput"  name="section" placeholder="Section">
+	 			</div>
+	 			<div class="form-group">
+	 				<label for="rollInput">Roll</label>
+	 				<input type="number" class="form-control" id="rollInput"  name="roll" placeholder="Roll">
+	 			</div>
+	 			<button type="submit" class="btn btn-primary">Add</button>
+	 			
+	 		</form>
+	 	</div>
+	 	<div class="row" id="list">
+
+	    </div>
+	 </div>
+
+     <script src="main.js"></script>
+     <script src="script.js"></script>
+     
+</body>
+</html>
